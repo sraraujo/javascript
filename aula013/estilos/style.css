@@ -18,14 +18,14 @@ main{
 }
 
 div#quadrado{
+    font-size: 18px;
     width: 500px;
-
     padding: 20px;
     margin: auto;
     background-color: rgb(255, 255, 255);
     border-radius: 15px ;
 
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.387);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.387);
 }
 
 h1{
@@ -33,11 +33,11 @@ h1{
 }
 
 h1, p{
-    margin-bottom: 20px; 
+    margin-bottom: 15px;
 }
 
-
 img{
+    vertical-align: middle;
     border-radius: 50%;
 }
 
@@ -59,4 +59,9 @@ a:hover{
 
 a:active{
     color: red;
+}
+
+a#atualizar, a#atualizar:hover, a#atualizar{
+    color: white;
+    text-decoration: none;
 }
