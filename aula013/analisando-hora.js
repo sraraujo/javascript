@@ -7,10 +7,10 @@ function analisandoHora(){
     var minutos = agora.getMinutes()
 
     if (minutos < 10){ minutos = `0${minutos}`}
-
+ 
     frase.innerHTML = `Agora são <strong>${hora}h${minutos}</strong>.`
 
-    if (hora > 0 && hora < 6){
+    if (hora >= 0 && hora < 6){
         foto.innerHTML = `<img src="imagens/madrugada.jpg">`
         window.document.body.style.backgroundColor = "#252422"      
         
