@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dectanto a idade</title>
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <h1>Verificador de Idade</h1>
+
+        <div>
+            <p>
+                <label for="ano">Ano de Nascimento:
+                    <input type="number" name="ano" id="ano" placeholder="Digite ano de nascimento" required>
+                </label>
+            </p>
+
+            <p>
+                <label for="sexo">Sexo:
+                    <input type="radio" name="sexo" id="sexo">Masculino
+                    <input type="radio" name="sexo" id="sexo" checked>Feminino
+                </label>
+            </p>
+
+            <p>
+                <input type="submit" value="Verificar" onclick="verificar()">
+            </p>
+
+            <p id="resposta">Preencha os dados acima para ver o resultado!</p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://github.com/sraraujo" target="_blank" rel="external">&copy; Dev Jota Pereira</a>
+    </footer>
+
+    <script src="analisar-idade.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando 2 números</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+
+    <input type="number" name="n1" id="n1">
+    <input type="text" name="operacao" id="operacao" placeholder="Digite a operação desejada">
+    <input type="number" name="n2" id="n2">
+    <input type="submit" value="Somar" id="soma">
+
+    <div id="resposta">Resultado aqui</div>
+
+    <script>
+
+        var açao = window.document.getElementById('soma')        
+        soma.addEventListener('click', somar)
+
+        function somar(){
+            var n1 = window.document.getElementById('n1')
+            var n2 = window.document.getElementById('n2')
+            var operacao = window.document.getElementById('operacao')
+            var resposta = window.document.getElementById('resposta')
+
+            n1 = Number(n1.value)
+            n2 = parseInt(n2.value)
+            operacao = operacao.value
+            
+            
+            
+            if (operacao == "+"){
+                var soma = n1 + n2
+                resposta.innerText = `A soma de ${n1} + ${n2} = ${soma}`
+            
+            } else if (operacao == "-"){
+                var soma = n1 - n2
+                resposta.innerText = `A subtração de ${n1} - ${n2} = ${soma}`
+            
+            } else if (operacao == "/"){
+                var soma = n1 / n2
+                resposta.innerText = `A divisão de ${n1} / ${n2} = ${soma}`
+            
+            } else if (operacao == "*"){
+                var soma = n1 * n2
+                resposta.innerText = `A multiplicação de ${n1} * ${n2} = ${soma}`
+
+            }else{
+                resposta.innerText = "A operação digita é inválida, tente novamente!!"
+            }
+        }
+    </script>
+    
+</body>
+</html>
