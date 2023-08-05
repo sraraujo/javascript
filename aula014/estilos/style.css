@@ -2,11 +2,11 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(74, 190, 229);
+    background-color: rgb(26, 119, 149);
 }
 
 h1{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 h1, footer, a{ 
@@ -18,7 +18,7 @@ h1, footer, a{
 div{
     max-width: 500px;
     margin: auto;
-    padding: 20px;
+    padding: 10px 20px 5px 20px;
     border-radius: 20px;
     background-color: white;   
 }
@@ -27,13 +27,17 @@ input#verificar{
     padding: 4px 5px;
 }
 
+p#resposta{
+    text-align: center;
+}
+
 img{
-    border-radius: 50%;
+    padding-top: 10px;
 }
 
 footer{
     font-style: italic;
-    padding: 20px;
+    padding: 10px 0px 0px 0px;
 }
 
 a:hover{
