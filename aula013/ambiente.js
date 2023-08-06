@@ -1,8 +1,14 @@
+/*
 var c = 1
-
 while ( c <= 10){
-    console.log(`Passo: ${c}`)
+    console.log(`${c}`)
     c++
 }
+*/
 
-// console.log('Tudo bem?')11
+console.log('vai começar!')
+for (var c = 1; c <= 5; c++){
+    console.log(c)
+}
+
+console.log('FIM')

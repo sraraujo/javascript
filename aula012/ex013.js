@@ -29,7 +29,7 @@ switch(diaSemana){
         console.log('Sábado')
         break
     
-        default:
-            console.log('[ERRO] - Dia inválido!')
-            break
+    default:
+        console.log('[ERRO] - Dia inválido!')
+        break
 }
