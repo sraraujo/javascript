@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificandor de Idade</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <h1>Verificando a Idade</h1>
+
+    <main>
+        <p>
+            <label for="nasc">Ano de Nascimento:
+                <input type="number" name="data_nasc" id="nasc" placeholder="Data com 4 digitos: AAAA" required>
+            </label>
+        </p>
+
+        <p>Sexo:
+            <input type="radio" name="sexo" id="sexo-m">
+            <label for="sexo-m">Masculino</label>
+
+            <input type="radio" name="sexo" id="sexo-f" checked>
+            <label for="sexo-f">Feminino</label>
+        </p>
+
+        <p>
+            <input type="submit" value="Verificar" id="bt-verificar" onclick="analisar()">
+        </p>
+
+        
+        <p id="resposta">
+                Preencha os dados acima para ver o resultado
+        </p>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://sraraujo.github.io/redes-sociais/" target="_blank" rel="external">
+                &copy; Dev Jota Pereira
+            </a>
+        </p>
+    </footer>
+
+    <script src="verificador.js"></script>
+    
+</body>
+</html>
