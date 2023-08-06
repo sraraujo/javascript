@@ -43,7 +43,6 @@ img{
 
 footer{
     font-style: italic;
-    font-size: 18px;
     margin-top: 20px;
 }
 
@@ -53,7 +52,7 @@ a{
 }
 
 a:hover{
-    color: rgb(166, 16, 16);
+    color: yellow;
     text-decoration: underline;
 }
 

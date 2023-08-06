@@ -56,13 +56,8 @@ a{
 a:hover{
     color: yellow;
     text-decoration: underline;
-
-    padding: 10px;
-    border-radius: 15px;
-    background-color: red;
 }
 
 a:active{
     color: red;
-    background-color: yellow;
 }
