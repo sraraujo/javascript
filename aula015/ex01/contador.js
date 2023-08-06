@@ -4,9 +4,17 @@ function contar(){
     var fim = document.getElementById('fim').value
     var resposta = document.getElementById('resposta')
 
-    while (inicio <= fim){
-        resposta.innerText = `${inicio} -> `
+    if (inicio < fim){
 
-        inicio += passo
+        while (inicio < fim){
+            resposta.innerText = `${inicio}`
+            inicio += passo
+        }
+    } else if (fim < inicio){
+
+        while (fim < inicio){
+            resposta.innerHTML = `${inicio}`
+            inicio -= passo
+        }
     }
 }
