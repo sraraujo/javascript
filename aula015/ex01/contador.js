@@ -23,6 +23,7 @@ function contar(){
             resposta.innerText += `${inicio}`
             inicio -= passo
 
+            // as variáveis foram investida para não haver troca dos emoji.
             figura(fim, inicio)
         }
     }
