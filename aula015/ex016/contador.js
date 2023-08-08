@@ -5,25 +5,38 @@ function contar(){
     var passo = Number(document.getElementById('passo').value)
     var fim = Number(document.getElementById('fim').value)
 
-    resposta.innerHTML = ''
-
-    if (inicio < fim){
-
-        while (inicio < fim){
-            resposta.innerText += `${inicio}`
-            inicio += passo
-
-            figura(inicio, fim)
-        }
-    } else if (inicio > fim){
+    if (passo == '' || passo == 0){
+        passo = 1
+        alert('Passo inválido, considerando passo = 1')
     
-        while (fim < inicio){
-            resposta.innerText += `${inicio}`
-            inicio -= passo
+    } else if (passo < 0){
+        passo *= -1
+    }
 
-            // as variáveis foram investida para não haver troca dos emoji.
-            // aqui, a variável fim virará início, e início virará fim na função
-            figura(fim, inicio)
+    if (inicio == "" || fim == ""){
+        alert('[ ERRO] - Campo "Início" ou "Fim" vazio')
+    
+    } else{
+        resposta.innerHTML = ''
+
+        if (inicio < fim){
+
+            while (inicio < fim){
+                resposta.innerText += `${inicio}`
+                inicio += passo
+    
+                figura(inicio, fim)
+            }
+        } else if (inicio > fim){
+        
+            while (fim < inicio){
+                resposta.innerText += `${inicio}`
+                inicio -= passo
+    
+                // as variáveis foram investida para não haver troca dos emoji.
+                // aqui, a variável fim virará início, e início virará fim na função
+                figura(fim, inicio)
+            }
         }
     }
 }
