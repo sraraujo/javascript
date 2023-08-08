@@ -1,20 +1,37 @@
+var resposta = document.getElementById('resposta')
+
 function contar(){
-    var inicio = document.getElementById('inicio').value
-    var passo = document.getElementById('passo').value
-    var fim = document.getElementById('fim').value
-    var resposta = document.getElementById('resposta')
+    var inicio = Number(document.getElementById('inicio').value)
+    var passo = Number(document.getElementById('passo').value)
+    var fim = Number(document.getElementById('fim').value)
+
+
+    resposta.innerHTML = ''
+
 
     if (inicio < fim){
 
         while (inicio < fim){
-            resposta.innerText = `${inicio}`
+            resposta.innerText += `${inicio}`
             inicio += passo
-        }
-    } else if (fim < inicio){
 
-        while (fim < inicio){
-            resposta.innerHTML = `${inicio}`
-            inicio -= passo
+            figura(inicio, fim)
         }
+    } else if (inicio > fim){
+    
+        while (fim < inicio){
+            resposta.innerText += `${inicio}`
+            inicio -= passo
+
+            figura(fim, inicio)
+        }
+    }
+}
+
+function figura(inicio, fim){
+    if (inicio < fim){
+        resposta.innerHTML += ` &#x1F449 `
+    } else{
+        resposta.innerHTML += ' &#x1F6A7 '
     }
 }
