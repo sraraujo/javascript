@@ -5,9 +5,7 @@ function contar(){
     var passo = Number(document.getElementById('passo').value)
     var fim = Number(document.getElementById('fim').value)
 
-
     resposta.innerHTML = ''
-
 
     if (inicio < fim){
 
@@ -24,6 +22,7 @@ function contar(){
             inicio -= passo
 
             // as variáveis foram investida para não haver troca dos emoji.
+            // aqui, a variável fim virará início, e início virará fim na função
             figura(fim, inicio)
         }
     }
