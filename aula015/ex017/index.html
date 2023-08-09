@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabuada</title>
+    <link rel="shortcut icon" href="../../favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
@@ -13,16 +14,19 @@
         <label for="numero">Número:
             <input type="number" name="" id="numero">
         </label>
-        <input type="submit" value="Gerar Tabuada">
+
+        <input type="submit" value="Gerar Tabuada" onclick="tabuar()">
 
         <p>
-            <select name="" id="selecao">
-                <option value="">Digite um número acima</option>
+            <select name="" id="resposta" size="10">              
+                <option value="">Digite um número acima..</option>
             </select>
         </p>
     </div>
 
     <footer><a href="https://sraraujo.github.io/redes-sociais/" target="_blank" rel="external">&copy;Dev Jota Pereira</a></footer>
+
+    <script src="ex017.js"></script>
     
 </body>
 </html>

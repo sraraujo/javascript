@@ -1,23 +1,23 @@
-var resposta = document.getElementById('resposta')
-
 function contar(){
-    var inicio = Number(document.getElementById('inicio').value)
-    var passo = Number(document.getElementById('passo').value)
-    var fim = Number(document.getElementById('fim').value)
+    var inicio = document.getElementById('inicio')
+    var fim = document.getElementById('fim')
+    var passo = document.getElementById('passo')
+    var resposta = document.getElementById('resposta')
 
-    if (passo == '' || passo == 0){
-        passo = 1
-        alert('Passo inválido, considerando passo = 1')
-    
-    } else if (passo < 0){
-        passo *= -1
-    }
-
-    if (inicio == "" || fim == ""){
-        alert('[ ERRO] - Campo "Início" ou "Fim" vazio')
-    
+    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
+        alert('[ ERRO] - Campo "Início", "Fim" ou "Passo" vazio')
+        resposta.innerHTML = "Impossível contar!"
+   
     } else{
-        resposta.innerHTML = ''
+        inicio = Number(inicio.value)
+        fim = Number(fim.value)
+        passo = Number(passo.value)
+        resposta.innerHTML = "Contando: <br>"
+
+        if (passo <= 0){
+            passo = 1
+            alert('Passo inválido, considerando passo = 1')
+        }
 
         if (inicio < fim){
 
@@ -37,7 +37,7 @@ function contar(){
                 // aqui, a variável fim virará início, e início virará fim na função
                 figura(fim, inicio)
             }
-        }
+        }        
     }
 }
 
