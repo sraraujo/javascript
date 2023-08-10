@@ -32,4 +32,6 @@ function analisandoHora(){
         window.document.body.style.backgroundColor = "#0d1009"
 
     }
+
+    setInterval(() => analisandoHora(), 20000)
 }
