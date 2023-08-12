@@ -6,7 +6,17 @@ function analisandoHora(){
     var agora = new Date()
     var hora = agora.getHours()
     var minutos = agora.getMinutes()
+    var segundos = agora.getSeconds()
 
+    // aqui ao rodar o código, verificamos os segundos, pois usaremos para 
+    if (segundos < 59){
+        segundos -= 60
+
+    }else{
+        segundos = 0
+    }
+
+    // tratamneto para colocar um "zero" do lado esquerdo, caso "minuto" seja menor que dez.
     if (minutos < 10){ minutos = `0${minutos}`}
  
     frase.innerHTML = `Agora são <strong>${hora}h${minutos}</strong>`
@@ -30,8 +40,7 @@ function analisandoHora(){
         saudação.innerText = '- Boa Noite'
         foto.innerHTML = `<img src="imagens/noite.jpg">`
         window.document.body.style.backgroundColor = "#0d1009"
-
     }
 
-    setInterval(() => analisandoHora(), 20000)
+    setInterval(() => analisandoHora(), segundos * 1000)
 }
