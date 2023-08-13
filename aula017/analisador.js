@@ -3,7 +3,6 @@ var selecao = document.getElementById('selecao')
 var resposta = document.getElementById('resposta')
 var lista = []
 
-
 function adicionar(){
     
     var valor = verificar(numero)
@@ -30,7 +29,7 @@ function adicionar(){
 function verificar(numero){
 
     //Verifica se o número é válido
-    if ( numero.value.length == 0 || numero.value <= 0 || numero.value > 100){
+    if ( numero.value.length == 0 || numero.value < 1 || numero.value > 100){
         alert('[ ERRO ] - Digite um número entre 1 e 100.')
         numero.value = ''
         numero.focus()
