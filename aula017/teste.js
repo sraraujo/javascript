@@ -1,9 +1,3 @@
-var numero = Math.random();
-numero = parseInt(numero * 10)
+var lista = [1, 2, 3, 4, 5]
 
-while (numero > 2 ){
-    numero = Math.random() * 10
-    numero = parseInt(numero)
-}
-
-console.log(numero)
+console.log(Math.max(lista))

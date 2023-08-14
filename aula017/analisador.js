@@ -42,17 +42,18 @@ function verificar(numero){
 }
 
 function finalizar(){
-    var maior;
-    var menor;
+    var maior = lista[0]
+    var menor = lista[0]
     var somatotal = 0
 
-    for (var x in lista){
+    if (lista.length == 0){
+        alert('[ ERRO ] - Adicione pelo menos um número antes  de finalizar.')
 
-        if (x == 0){
-            maior = lista[x]
-            menor = lista[x]
-        
-        } else{
+    } else{
+        for (var x in lista){
+
+            somatotal += Number(lista[x])
+
             if (lista[x] > maior){
                 maior = lista[x]
             }
@@ -60,15 +61,14 @@ function finalizar(){
             if (lista[x] < menor){
                 menor = lista[x]
             }
-        }
-
-        somatotal += Number(lista[x])
+        }           
     }
-
-    resposta.innerHTML = `${lista}`
-    resposta.innerHTML += `<p>Ao todo, temos ${lista.length} números cadastrados</p>`
-    resposta.innerHTML += `<p>O maior valor informado foi ${maior}</p>`
-    resposta.innerHTML += `<p>O menor valor informado foi ${menor}</p>`
-    resposta.innerHTML += `<p>Somando todos os valores, temos ${somatotal} </p>`
-    resposta.innerHTML += `<p>A média dos valores digitados é ${(somatotal / lista.length).toFixed(2)}</p>`
+    
+        resposta.innerHTML = `${lista}`
+        resposta.innerHTML += `<p>Ao todo, temos ${lista.length} números cadastrados</p>`
+        resposta.innerHTML += `<p>O maior valor informado foi ${maior}</p>`
+        resposta.innerHTML += `<p>O menor valor informado foi ${menor}</p>`
+        resposta.innerHTML += `<p>Somando todos os valores, temos ${somatotal} </p>`
+        resposta.innerHTML += `<p>A média dos valores digitados é ${(somatotal / lista.length).toFixed(2)}</p>`
 }
+
