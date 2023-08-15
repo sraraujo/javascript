@@ -10,11 +10,10 @@ function hoje(){
         minutos = `0${minutos}`
     }
 
-    if (segundps < 9){
+    if (segundps < 10){
         segundps = `0${segundps}`
     }
     resultado.innerHTML = `<p id="p-relogio">${hora}:${minutos}:${segundps}</p>`
     
     setInterval(() => hoje(), 1000)
-    setInterval(() => analisandoHora(), segundos * 1000)
 }
