@@ -50,25 +50,26 @@ function finalizar(){
         alert('[ ERRO ] - Adicione pelo menos um número antes  de finalizar.')
 
     } else{
-        for (var x in lista){
-
-            somatotal += Number(lista[x])
-
-            if (lista[x] > maior){
-                maior = lista[x]
-            }
+        for (var x of lista){
+            somatotal += Number(x)
             
-            if (lista[x] < menor){
-                menor = lista[x]
+            x = Number(x)
+
+            if (x < menor){
+                menor = x
             }
-        }           
-    }
-    
-        resposta.innerHTML = `${lista}`
+
+            if (x > maior){
+                maior = x
+            }
+        }  
+        
+        var media = (somatotal / lista.length).toFixed(2)
         resposta.innerHTML += `<p>Ao todo, temos ${lista.length} números cadastrados</p>`
         resposta.innerHTML += `<p>O maior valor informado foi ${maior}</p>`
         resposta.innerHTML += `<p>O menor valor informado foi ${menor}</p>`
         resposta.innerHTML += `<p>Somando todos os valores, temos ${somatotal} </p>`
-        resposta.innerHTML += `<p>A média dos valores digitados é ${(somatotal / lista.length).toFixed(2)}</p>`
+        resposta.innerHTML += `<p>A média dos valores digitados é ${media}</p>`
+    }  
 }
 

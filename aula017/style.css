@@ -79,6 +79,7 @@ div p{
 
 footer{
     text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.409);
 }
 
 a{
