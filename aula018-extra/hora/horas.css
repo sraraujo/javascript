@@ -43,7 +43,7 @@ div{
 }
 
 div > p#p-relogio{
-    font-size: 10rem;
+    font-size: 10em;
     text-align: center;
 
     color: red;
@@ -78,7 +78,7 @@ a:active{
     }
 
     div > p#p-relogio{
-        font-size: 5rem;
+        font-size: 4em;
     }
     
 }
