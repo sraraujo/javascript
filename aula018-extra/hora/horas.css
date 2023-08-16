@@ -75,10 +75,5 @@ a:active{
 
     h1{
         font-size: 2rem;
-    }
-
-    div > p#p-relogio{
-        font-size: 4em;
-    }
-    
+    }   
 }
