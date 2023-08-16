@@ -46,7 +46,7 @@ div > p#p-relogio{
     font-size: 10em;
     text-align: center;
 
-    color: red;
+    color: #ff0000;
     
     padding: 10px;
 }
@@ -57,24 +57,28 @@ footer{
 }
 
 a{
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-style: italic;
 }
 
 a:hover{
-    color: yellow;
+    color: #ffff00;
     text-decoration: underline;
 }
 
 a:active{
-    color: red;
+    color: #ff0000;
 }
 
 @media screen and (max-width: 600px) {
 
     h1{
         font-size: 2rem;
+    }
+
+    section{
+        height: 70vh;
     }
 
     div > p#p-relogio{
