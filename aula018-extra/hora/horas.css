@@ -31,7 +31,6 @@ h1{
 
 section{
     height: 80vh;
-    margin: auto;
 }
 
 div{
@@ -54,7 +53,6 @@ div > p#p-relogio{
 
 footer{
     text-align: center;
-    line-height: 30px;
     height: 5vh;
 }
 
