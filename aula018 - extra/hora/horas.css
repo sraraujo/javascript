@@ -2,43 +2,41 @@
 
 @font-face {
     font-family: "ds-digital";
-    src: url("fonte/DS-DIGI.TTF");
+    src: url("fonte/DS-DIGIT.TTF");
 }
 
 *{
+    font-family: "ds-digital";
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    background-color: burlywood;
+    background-color: #000000;
 }
 
 header{
     height: 15vh;
-
     padding-top: 20px;
-    background-color: aqua;
 }
 
 h1{
-    font-family: "ds-digital";
     font-size: 4rem;
     text-align: center;
+
+    color: #ffffff;
 }
 
 section{
     height: 80vh;
     margin: auto;
-
-    background-color: blueviolet;
 }
 
 div{
-    width: 600px;
+    max-width: 600px;
     height: auto;
-
     margin: auto;
 
     border-radius: 20px;
@@ -46,36 +44,18 @@ div{
 }
 
 div > p#p-relogio{
-    font-family: "ds-digital";
     font-size: 10rem;
     text-align: center;
+
+    color: red;
     
     padding: 10px;
-}
-
-#botao-hora{
-    font-weight: bold;
-    display: flex;
-    margin: 20px auto;
-    padding: 10px 15px;
-
-    border: 1px solid #0000006e;
-    border-radius: 10px;
-}
-
-#botao-hora:hover{
-    background-color: #2cc12c
-}
-
-#botao-hora:active{
-    background-color: green;
 }
 
 footer{
     text-align: center;
     line-height: 30px;
     height: 5vh;
-    background-color: yellowgreen;
 }
 
 a{
@@ -91,4 +71,16 @@ a:hover{
 
 a:active{
     color: red;
+}
+
+@media screen and (max-width: 600px) {
+
+    h1{
+        font-size: 2rem;
+    }
+
+    div > p#p-relogio{
+        font-size: 4em;
+    }
+    
 }
