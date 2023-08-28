@@ -12,6 +12,8 @@
  
     } else if (idade > 120){
         window.alert(`Sério que você tem ${idade} anos?`)   
+        resposta.innerHTML = `<strong>Detectamos</strong> um fóssil com ${idade}`
+        resposta.innerHTML += `<img src="imagens/esqueleto.png">`
 
     } else{
         resposta.innerText = ""
